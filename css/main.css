@@ -1,32 +1,60 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    color: darkblue;
-    background-color: whitesmoke;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    font-family: 'CustomFont', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto; /* Centre la page horizontalement */
+    padding: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+/* Utilisation de @font-face pour une police personnalisée */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/custom-font.woff2') format('woff2');
 }
 
-a {
-    color: deeppink;
+/* Modifier la couleur, l'alignement et la taille d'un texte */
+h1 {
+    color: #007bff; /* Modification de la couleur */
+    text-align: center; /* Alignement du texte */
+    font-size: 24px; /* Taille en px */
+}
+
+p {
+    font-size: 1.2em; /* Taille en em */
+}
+
+.small-text {
+    font-size: 0.8rem; /* Taille en rem */
+}
+
+/* Effet de survol sur les liens de navigation */
+nav a {
     text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    transition: color 0.3s;
 }
 
-a:hover {
-    color: darkmagenta;
+nav a:hover {
+    color: #0056b3; /* Effet de survol */
 }
 
-.avatar{
-    max-width: 200px;
-    max-height: 200px;
+/* Définir une bordure pour un élément */
+.box {
+    border: 2px solid #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre sur un élément */
+}
+
+/* Centrer du contenu horizontalement */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
